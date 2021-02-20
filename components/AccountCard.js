@@ -2,8 +2,8 @@ const AccountCard = Vue.component('account-card',{
     props : ['user'],
     template : `
         <div class='flex w-full px-4 py-5 bg-yellow-300 rounded space-x-5 items-center'>
-            <div class='h-12 w-12'>
-                <img src='../assets/profile.png' class='rounded-lg'>
+            <div class='overview-hidden'>            
+                <img src='../assets/profile.png' class='rounded-lg h-full w-full'>
             </div>
             <div class='flex flex-col w-full'>
                 <div class='flex items-center justify-between'>
