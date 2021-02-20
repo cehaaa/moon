@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon - Payment Application</title>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="../src/tailwind.css">
+
+</head>
+<body class='bg-gray-200 select-none'>
+    
+    <!-- container -->
+    <div id="app" class="flex justify-center space-x-10 items-center">
+
+        <!-- app mockup -->
+        <div class="flex flex-col w-full lg:w-3/12 bg-gray-100 lg:my-5 pb-5 h-screen">
+
+            <!-- back arrow -->
+            <div class="flex p-5">
+                <a href="./home.html">
+                    <div class="flex space-x-5">
+                        <img src="../assets/back.png" alt="back arrow" class="cursor-pointer select-none">
+                        <div class="font-semibold text-gray-700 text-sm">Profile</div>
+                    </div>
+                </a>
+            </div>            
+        
+            <!-- account card -->
+            <div class="py-3 px-5">
+                <account-card :user='user'></account-card>
+            </div>
+
+            <div class="py-2 px-5 flex items-center relative text-sm">                
+                <img src="../assets/bank-card.png" alt="bank card overview" class=" w-40 z-20">                
+                <div class="rounded-md bg-white py-6 w-full px-5 -ml-3 font-mono">                    
+                    <div>
+                        <div class="font-semibold text-gray-700">Balance</div>
+                        <div class="text-yellow-500 text-2xl font-sans">{{balance}}</div>
+                    </div>
+                    
+                    <div class="pt-5 flex flex-col space-y-1">
+                        <div class="font-semibold text-gray-700">This month</div>
+                        <div class="flex">
+                            <img src="../assets/down-graph.png" alt="">
+                            <div class="text-gray-500">16.574 USD</div>
+                        </div>
+                        <div class="flex">
+                            <img src="../assets/up-graph.png" alt="">
+                            <div class="text-gray-500">8.574 USD</div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            
+
+            <!-- transfer history -->
+            <div class="pt-5 px-5">
+                <div class="flex w-full space-between flex-row mb-5 text-gray-700 border-b-2 border-solid pb-3 space-x-5">
+                    <div>
+                        <img src="../assets/dragon.jpg" alt="" class="h-10 w-12 rounded">
+                    </div>
+                    <div>
+                        <div class="font-bold text-md">Myoui Sharon Mina</div>
+                        <div class="text-gray-500">4 trasactions</div>
+                    </div>
+                    <div class="ml-auto">
+                        <div class="font-bold text-md">$200</div>
+                    </div>
+                </div>
+
+                <div class="flex w-full space-between flex-row mb-5 text-gray-700 border-b-2 border-solid pb-3 space-x-5">
+                    <div>
+                        <img src="../assets/liondance2.jpg" alt="" class="h-10 w-12 rounded">
+                    </div>
+                    <div>
+                        <div class="font-bold text-md">Chou Tzuyu</div>
+                        <div class="text-gray-500">4 trasactions</div>
+                    </div>
+                    <div class="ml-auto">
+                        <div class="font-bold text-md">$200</div>
+                    </div>
+                </div>                
+
+            </div>
+
+            <!-- mobile navigation -->
+            <mobile-navigation></mobile-navigation>
+
+        </div>
+
+    </div>
+
+    <!-- vue js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <!-- script -->
+    <script src="../js/app.js" type="module"></script>
+
+</body>
+</html>

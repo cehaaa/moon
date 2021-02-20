@@ -13,20 +13,22 @@
 <body class='bg-gray-200 select-none'>
     
     <!-- container -->
-    <div id="app" class="flex justify-center space-x-10 items-center   ">
+    <div id="app" class="flex justify-center space-x-10 items-center">
 
         <!-- app mockup -->
         <div class="flex flex-col w-full lg:w-3/12 bg-gray-100 lg:my-5 pb-5">
 
             <!-- header -->
-            <div class="bg-yellow-400 h-60 lg:h-52 flex p-5 justify-center flex-col">   
+            <div class="bg-yellow-400 h-60 lg:h-52 flex p-5 justify-center flex-col">
                 <div class="flex items-center pb-14 justify-between">
                     <div class='text-gray-800'>
-                        <div class='font-bold text-3xl'>$ {{balance}}</div>                
+                        <div class='font-bold text-3xl'>$ {{balance}}</div>
                         <div class="text-sm mt-2 font-semibold">Available balance</div>
                     </div>
                     <div class="flex">
-                        <img src="../assets/profile-image.png" alt="profile image" class=" cursor-pointer">
+                        <a href="profile.html">
+                            <img src="../assets/profile-image.png" alt="profile image" class=" cursor-pointer">
+                        </a>
                     </div>
                 </div>                
             </div>
