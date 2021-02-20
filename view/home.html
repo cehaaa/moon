@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon - Payment Application</title>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="../src/tailwind.css">
+
+</head>
+<body class='bg-gray-200 select-none'>
+    
+    <!-- container -->
+    <div id="app" class="flex justify-center space-x-10 items-center   ">
+
+        <!-- app mockup -->
+        <div class="flex flex-col w-full lg:w-3/12 bg-gray-100 lg:my-5 pb-5">
+
+            <!-- header -->
+            <div class="bg-yellow-400 h-60 lg:h-52 flex p-5 justify-center flex-col">   
+                <div class="flex items-center pb-14 justify-between">
+                    <div class='text-gray-800'>
+                        <div class='font-bold text-3xl'>$ {{balance}}</div>                
+                        <div class="text-sm mt-2 font-semibold">Available balance</div>
+                    </div>
+                    <div class="flex">
+                        <img src="../assets/profile-image.png" alt="profile image" class=" cursor-pointer">
+                    </div>
+                </div>                
+            </div>
+
+            <!-- information-card -->
+            <div class="px-5 -mt-20 lg:-mt-14">                   
+                <information-card :balance='balance' :earned='earned'></information-card>
+            </div>
+
+            <!-- account card -->
+            <div class="pt-10 px-5">
+                <account-card :user='user'></account-card>
+            </div>
+
+            <!-- history -->
+            <div class="pt-6 px-5">
+                <div class="font-semibold">History</div>
+                <history :user='user'></history>
+            </div>
+
+            <!-- mobile navigation -->
+            <mobile-navigation></mobile-navigation>
+
+        </div>
+
+    </div>
+
+    <!-- vue js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <!-- script -->
+    <script src="../js/app.js" type="module"></script>
+
+</body>
+</html>

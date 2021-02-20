@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon - Payment Application</title>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="../src/tailwind.css">
+
+</head>
+<body class='bg-gray-200'>
+    
+    <!-- container -->
+    <div id="app" class="flex justify-center space-x-10 items-center   ">
+
+        <!-- app mockup -->
+        <div class="flex flex-col w-full lg:w-3/12 bg-gray-100 lg:my-5 pb-5">
+
+            <div class="flex p-5">
+                <a href="./home.html">
+                    <img src="../assets/back.png" alt="" class="cursor-pointer">
+                </a>
+            </div>
+
+            <div class="py-10 px-5 flex justify-center items-center">
+                <img src="../assets//finger-print.png" alt="">
+            </div>
+
+            <div class="text-center px-5 font-bold text-3xl">
+                <div>Use Touch ID to</div>
+                <div>autorise payments</div>                
+            </div>
+
+            <div class="p-5 text-center text-gray-500">
+                <div>Activate touch ID so you Don’t need</div>
+                <div>to confirm your PIN every time you</div>
+                <div>want to send money</div>
+            </div>
+
+            <div class="p-5 flex flex-col items-center justify-center">
+                <button class="p-4 bg-yellow-400 w-full text-white font-semibold rounded">Activate Now</button>
+                <div class="text-gray-500 mt-5 uppercase font-semibold cursor-pointer">skip</div>
+            </div>
+
+            <!-- mobile navigation -->
+            <mobile-navigation></mobile-navigation>
+
+        </div>
+
+    </div>
+
+    <!-- vue js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <!-- script -->
+    <script src="../js/app.js" type="module"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon - Payment Application</title>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="../src/tailwind.css">
+
+</head>
+<body class='bg-gray-200 '>
+    
+    <!-- container -->
+    <div id="app" class="flex justify-center space-x-10 items-center bg-gray-200  ">
+
+        <!-- app mockup -->
+        <div class="flex flex-col w-full lg:w-3/12 bg-gray-100 lg:my-5 pb-5">
+
+            <div class="flex p-5">
+                <a href="./home.html">
+                    <img src="../assets/back.png" alt="back arrow" class="cursor-pointer select-none">
+                </a>
+            </div>
+
+            <div class="flex items-center flex-col py-5">
+                <img src="./../assets/confenti.png" alt="">
+                <div class="font-bold text-yellow-400 text-2xl">My Receipt</div>
+            </div>
+            
+
+            <div class="flex p-5">             
+                {{historyId}}  
+                <!-- <receipt-card :user='user'></receipt-card> -->
+            </div>
+
+            <!-- mobile navigation -->
+            <mobile-navigation></mobile-navigation>
+
+        </div>
+
+    </div>
+
+    <!-- vue js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <!-- script -->
+    <script src="../js/app.js" type="module"></script>
+
+</body>
+</html>

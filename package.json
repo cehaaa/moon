@@ -1,0 +1,18 @@
+{
+  "name": "moon",
+  "version": "1.0.0",
+  "description": "this is a simple payment application built with Vue and tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/veeloo/moon"
+  },
+  "author": "Chrsitian Gouw",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^2.0.3"
+  }
+}
