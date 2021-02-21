@@ -34,3 +34,5 @@ const app = new Vue({
         'receipt-card' : ReceiptCard
     },    
 })
+
+
