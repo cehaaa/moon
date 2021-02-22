@@ -16,10 +16,10 @@
     <div id="app" class="flex justify-center space-x-10 items-center">
 
         <!-- app mockup -->
-        <div class="flex flex-col w-full lg:w-3/12 bg-gray-100 lg:my-5 pb-5">
+        <div class="flex flex-col w-full lg:w-3/12 bg-gray-100 my-0 lg:my-5 pb-5 rounded-none lg:rounded-lg">
 
             <!-- header -->
-            <div class="bg-yellow-400 h-60 lg:h-52 flex p-5 justify-center flex-col">
+            <div class="bg-yellow-400 h-60 lg:h-64 flex p-5 justify-center flex-col rounded-none lg:rounded-t-lg">
                 <div class="flex items-center pb-14 justify-between">
                     <div class='text-gray-800'>
                         <div class='font-bold text-3xl'>$ {{balance}}</div>
@@ -34,7 +34,7 @@
             </div>
 
             <!-- information-card -->
-            <div class="px-5 -mt-20 lg:-mt-14">                   
+            <div class="px-5 -mt-20 lg:-mt-20">                   
                 <information-card :balance='balance' :earned='earned'></information-card>
             </div>
 
