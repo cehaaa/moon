@@ -25,8 +25,8 @@ const InformationCard = Vue.component('information-card',{
                     You spent $2,732 on dining out this month.
                     Let’s try to make it lower
                 </div>
-                <div class='mt-3 '>
-                    <a href='../view/transaction.html' class='inline-block text-gray-500 underline cursor-pointer'>Tell me more</a>                    
+                <div class='mt-3 '>                    
+                <a href='../view/transaction.html' class='inline-block text-gray-500 underline cursor-pointer'>Tell me more</a>
                 </div>
             </div>
 

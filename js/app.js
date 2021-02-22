@@ -4,8 +4,10 @@ import History from '../components/History.js'
 import MobileNavigation from '../components/MobileNavigation.js'
 import ReceiptCard from '../components/ReceiptCard.js'
 
+// import routes from '../routes/routes.js'
+
 const app = new Vue({
-    el : '#app',
+    el : '#app',    
     data: {        
         balance : '22.866',
         earned : '2.730',
@@ -32,7 +34,7 @@ const app = new Vue({
         'history' : History,
         'mobile-navigation' : MobileNavigation,
         'receipt-card' : ReceiptCard
-    },    
+    },        
 })
 
 
